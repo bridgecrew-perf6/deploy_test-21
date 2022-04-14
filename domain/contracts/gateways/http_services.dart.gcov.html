@@ -32,12 +32,12 @@
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">1</td>
-            <td class="headerCovTableEntry">2</td>
-            <td class="headerCovTableEntryLo">50.0 %</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-03-30 08:33:59</td>
+            <td class="headerValue">2022-04-14 14:17:17</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">0</td>
@@ -61,24 +61,23 @@
 <pre class="sourceHeading">          Line data    Source code</pre>
 <pre class="source">
 <a name="1"><span class="lineNum">       1 </span>            : abstract class HttpServices {</a>
-<a name="2"><span class="lineNum">       2 </span><span class="lineNoCov">          0 :   HttpServices();</span></a>
-<a name="3"><span class="lineNum">       3 </span>            :   Future&lt;HttpServices&gt; getInstance();</a>
-<a name="4"><span class="lineNum">       4 </span>            :   Future&lt;HttpResponse&gt; get(String url, {Map&lt;String, String&gt;? header});</a>
-<a name="5"><span class="lineNum">       5 </span>            :   Future&lt;HttpResponse&gt; post(String url,</a>
-<a name="6"><span class="lineNum">       6 </span>            :       {Map&lt;String, String&gt;? header, required Map&lt;String, dynamic&gt; body});</a>
-<a name="7"><span class="lineNum">       7 </span>            :   Future&lt;HttpResponse&gt; put(String url,</a>
-<a name="8"><span class="lineNum">       8 </span>            :       {Map&lt;String, String&gt;? header, required Map&lt;String, String&gt; body});</a>
-<a name="9"><span class="lineNum">       9 </span>            :   Future&lt;HttpResponse&gt; delete(String url, {Map&lt;String, String&gt;? header});</a>
-<a name="10"><span class="lineNum">      10 </span>            :   Future&lt;HttpResponse&gt; patch(String url,</a>
-<a name="11"><span class="lineNum">      11 </span>            :       {Map&lt;String, String&gt;? header, required Map&lt;String, String&gt; body});</a>
-<a name="12"><span class="lineNum">      12 </span>            : }</a>
-<a name="13"><span class="lineNum">      13 </span>            : </a>
-<a name="14"><span class="lineNum">      14 </span>            : class HttpResponse {</a>
-<a name="15"><span class="lineNum">      15 </span>            :   final int? statusCode;</a>
-<a name="16"><span class="lineNum">      16 </span>            :   final dynamic data;</a>
-<a name="17"><span class="lineNum">      17 </span>            : </a>
-<a name="18"><span class="lineNum">      18 </span><span class="lineCov">          4 :   HttpResponse({this.statusCode, required this.data});</span></a>
-<a name="19"><span class="lineNum">      19 </span>            : }</a>
+<a name="2"><span class="lineNum">       2 </span>            :   Future&lt;HttpServices&gt; getInstance();</a>
+<a name="3"><span class="lineNum">       3 </span>            :   Future&lt;HttpResponse&gt; get(String url, {Map&lt;String, String&gt;? header});</a>
+<a name="4"><span class="lineNum">       4 </span>            :   Future&lt;HttpResponse&gt; post(String url,</a>
+<a name="5"><span class="lineNum">       5 </span>            :       {Map&lt;String, String&gt;? header, required Map&lt;String, dynamic&gt; body});</a>
+<a name="6"><span class="lineNum">       6 </span>            :   Future&lt;HttpResponse&gt; put(String url,</a>
+<a name="7"><span class="lineNum">       7 </span>            :       {Map&lt;String, String&gt;? header, required Map&lt;String, String&gt; body});</a>
+<a name="8"><span class="lineNum">       8 </span>            :   Future&lt;HttpResponse&gt; delete(String url, {Map&lt;String, String&gt;? header});</a>
+<a name="9"><span class="lineNum">       9 </span>            :   Future&lt;HttpResponse&gt; patch(String url,</a>
+<a name="10"><span class="lineNum">      10 </span>            :       {Map&lt;String, String&gt;? header, required Map&lt;String, String&gt; body});</a>
+<a name="11"><span class="lineNum">      11 </span>            : }</a>
+<a name="12"><span class="lineNum">      12 </span>            : </a>
+<a name="13"><span class="lineNum">      13 </span>            : class HttpResponse {</a>
+<a name="14"><span class="lineNum">      14 </span>            :   final int? statusCode;</a>
+<a name="15"><span class="lineNum">      15 </span>            :   final dynamic data;</a>
+<a name="16"><span class="lineNum">      16 </span>            : </a>
+<a name="17"><span class="lineNum">      17 </span><span class="lineCov">          6 :   HttpResponse({this.statusCode, required this.data});</span></a>
+<a name="18"><span class="lineNum">      18 </span>            : }</a>
 </pre>
       </td>
     </tr>
